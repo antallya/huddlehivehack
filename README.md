@@ -156,6 +156,8 @@ This gamification makes social connection feel playful rather than pressured.
 
 **Live Website**: [https://antallya.github.io/huddlehivehack/](https://antallya.github.io/huddlehivehack/) 🌐
 
+**Status**: Deploying... ⚡
+
 This project is configured for automatic deployment to GitHub Pages using GitHub Actions. Every push to the main branch automatically builds and deploys the site.
 
 ### New Features Added
