@@ -15,13 +15,11 @@ Run these commands in the project directory:
 
 ```bash
 # Add the GitHub repository as remote origin
-git remote add origin https://github.com/YOUR_USERNAME/huddlehivehack.git
+git remote add origin https://github.com/antallya/huddlehivehack.git
 
 # Push your code to GitHub
 git push -u origin main
 ```
-
-Replace `YOUR_USERNAME` with your actual GitHub username.
 
 ## Step 3: Enable GitHub Pages
 
@@ -35,7 +33,7 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
 
 After the deployment completes (usually takes 2-3 minutes), your website will be available at:
 ```
-https://YOUR_USERNAME.github.io/huddlehivehack/
+https://antallya.github.io/huddlehivehack/
 ```
 
 ## Automatic Deployments
