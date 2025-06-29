@@ -14,14 +14,24 @@
             <a href="#how-it-works" class="text-gray-700 hover:text-purple-600 transition-colors">How It Works</a>
             <a href="#moods" class="text-gray-700 hover:text-purple-600 transition-colors">Mood Categories</a>
             <NuxtLink to="/demo" class="text-gray-700 hover:text-purple-600 transition-colors">Try Demo</NuxtLink>
+            <NuxtLink to="/match" class="text-gray-700 hover:text-purple-600 transition-colors">Community Match</NuxtLink>
             <NuxtLink to="/primevue" class="text-gray-700 hover:text-purple-600 transition-colors">PrimeVue</NuxtLink>
             <a href="#safety" class="text-gray-700 hover:text-purple-600 transition-colors">Safety</a>
             <NuxtLink to="/about" class="text-gray-700 hover:text-purple-600 transition-colors">About</NuxtLink>
           </div>
-          <UButton color="purple" size="lg" class="hidden md:block">
-            Join the Beta
-          </UButton>
-          <UButton variant="ghost" icon="i-heroicons-bars-3" class="md:hidden" />
+          <div class="flex items-center space-x-4">
+            <NuxtLink to="/auth">
+              <UButton variant="ghost" size="lg" class="hidden md:block">
+                Sign In
+              </UButton>
+            </NuxtLink>
+            <NuxtLink to="/auth">
+              <UButton color="purple" size="lg" class="hidden md:block">
+                Join Beta
+              </UButton>
+            </NuxtLink>
+            <UButton variant="ghost" icon="i-heroicons-bars-3" class="md:hidden" />
+          </div>
         </div>
       </div>
     </nav>
@@ -31,49 +41,114 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <div class="flex justify-center mb-8">
-            <VennLogo class="h-24 w-24" />
+            <VennLogo size="large" />
           </div>
           <h1 class="text-5xl md:text-7xl font-bold mb-6">
             <span class="bg-gradient-to-r from-purple-600 via-blue-600 to-teal-600 bg-clip-text text-transparent">
-              vennU
+              Find Your Perfect
+            </span>
+            <br>
+            <span class="bg-gradient-to-r from-teal-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+              Community Match
             </span>
           </h1>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            Third Space Social Mood Marketplace
-          </h2>
           <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Connect with people based on your current social vibe for spontaneous micro-meetups in public spaces. 
-            It's like Mood Charades in real life!
+            Swipe through venues, connect with communities, and build amazing experiences together! 
+            It's like Tinder for finding your perfect social space.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <NuxtLink to="/demo">
-              <UButton color="purple" size="xl" class="px-8 py-4">
-                <Icon name="i-heroicons-play" class="mr-2" />
-                Try Mood Charades
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <NuxtLink to="/match">
+              <UButton color="purple" size="xl" class="px-8 py-4 text-lg font-semibold">
+                Get Started Now! 🚀
               </UButton>
             </NuxtLink>
-            <UButton variant="outline" size="xl" class="px-8 py-4">
-              <Icon name="i-heroicons-video-camera" class="mr-2" />
-              Watch Demo
-            </UButton>
+            <NuxtLink to="/demo">
+              <UButton variant="outline" color="gray" size="xl" class="px-8 py-4 text-lg">
+                Try Demo
+              </UButton>
+            </NuxtLink>
+          </div>
+          
+          <!-- Hero Stats - inspired by reference site -->
+          <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div class="text-center">
+              <div class="text-4xl font-bold text-purple-600 mb-2">500+</div>
+              <div class="text-gray-600">Active Communities</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-teal-600 mb-2">1,200+</div>
+              <div class="text-gray-600">Available Venues</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-orange-600 mb-2">10K+</div>
+              <div class="text-gray-600">Happy Matches</div>
+            </div>
           </div>
         </div>
       </div>
-      
-      <!-- Floating mood bubbles -->
-      <div class="absolute top-1/4 left-10 animate-bounce">
-        <MoodBubble mood="Quiet Company" color="bg-blue-100 text-blue-700" />
-      </div>
-      <div class="absolute top-1/3 right-16 animate-bounce delay-1000">
-        <MoodBubble mood="Creative Energy" color="bg-purple-100 text-purple-700" />
-      </div>
-      <div class="absolute bottom-1/4 left-1/4 animate-bounce delay-500">
-        <MoodBubble mood="Gentle Movement" color="bg-teal-100 text-teal-700" />
+    </section>
+
+    <!-- Features Section - Inspired by reference site -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Join Communities -->
+          <div class="text-center group hover:scale-105 transition-transform duration-300">
+            <div class="bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl p-8 mb-6 group-hover:shadow-xl transition-shadow">
+              <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="i-heroicons-user-group" class="text-2xl text-white" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Join Communities</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Discover amazing communities that match your interests and passions!
+              </p>
+            </div>
+          </div>
+
+          <!-- List Your Venue -->
+          <div class="text-center group hover:scale-105 transition-transform duration-300">
+            <div class="bg-gradient-to-br from-teal-100 to-teal-50 rounded-2xl p-8 mb-6 group-hover:shadow-xl transition-shadow">
+              <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="i-heroicons-building-storefront" class="text-2xl text-white" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">List Your Venue</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Share your space and connect with vibrant communities looking for the perfect spot!
+              </p>
+            </div>
+          </div>
+
+          <!-- Virtual Spaces -->
+          <div class="text-center group hover:scale-105 transition-transform duration-300">
+            <div class="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 mb-6 group-hover:shadow-xl transition-shadow">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="i-heroicons-globe-alt" class="text-2xl text-white" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Virtual Spaces</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Host online events and connect with communities worldwide through virtual venues!
+              </p>
+            </div>
+          </div>
+
+          <!-- Swipe & Match -->
+          <div class="text-center group hover:scale-105 transition-transform duration-300">
+            <div class="bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl p-8 mb-6 group-hover:shadow-xl transition-shadow">
+              <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="i-heroicons-heart" class="text-2xl text-white" />
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Swipe & Match</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Tinder-style matching for community leaders to find their perfect venues!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Problem Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold text-gray-800 mb-6">The Problem We're Solving</h2>
@@ -209,6 +284,117 @@
             description="Shared space, optional interaction"
             color="from-pink-500 to-pink-600"
           />
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Matching Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-6">Swipe & Match Communities</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover communities and venues that perfectly align with your current mood and interests. 
+            Swipe through options like finding your perfect social match!
+          </p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Features List -->
+          <div class="space-y-8">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Icon name="i-heroicons-heart" class="w-6 h-6 text-purple-600" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Tinder-Style Matching</h3>
+                <p class="text-gray-600">Swipe right on communities you love, left on ones that don't match your vibe. Find your perfect social connections effortlessly.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Icon name="i-heroicons-building-storefront" class="w-6 h-6 text-teal-600" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Venue Discovery</h3>
+                <p class="text-gray-600">Find spaces that match your group size, budget, and mood. From cozy cafes to creative makerspaces.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Icon name="i-heroicons-users" class="w-6 h-6 text-orange-600" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Community Building</h3>
+                <p class="text-gray-600">Join existing communities or create your own. Connect with like-minded people who share your interests and energy.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Icon name="i-heroicons-chart-bar" class="w-6 h-6 text-green-600" />
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart Analytics</h3>
+                <p class="text-gray-600">Track your mood patterns and see what types of communities and spaces you connect with most.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mock Phone Interface -->
+          <div class="flex justify-center">
+            <div class="relative">
+              <!-- Phone Frame -->
+              <div class="w-72 h-96 bg-gray-800 rounded-3xl p-2 shadow-2xl">
+                <div class="w-full h-full bg-gradient-to-br from-purple-50 to-teal-50 rounded-2xl overflow-hidden relative">
+                  <!-- Mock Swipe Card -->
+                  <div class="absolute inset-4 bg-white rounded-xl shadow-lg">
+                    <div class="h-32 bg-gradient-to-r from-purple-400 to-teal-400 rounded-t-xl"></div>
+                    <div class="p-4">
+                      <div class="flex items-center justify-between mb-2">
+                        <h4 class="font-semibold text-gray-800">Digital Nomads Club</h4>
+                        <span class="text-sm bg-purple-100 text-purple-600 px-2 py-1 rounded-full">92% match</span>
+                      </div>
+                      <p class="text-gray-600 text-sm mb-3">Remote workers coffee community</p>
+                      <div class="flex space-x-2 mb-3">
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">Coffee</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">Networking</span>
+                      </div>
+                      <div class="flex justify-between text-sm text-gray-500">
+                        <span>15 members</span>
+                        <span>0.3 miles</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Action Buttons -->
+                  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                      <Icon name="i-heroicons-x-mark" class="w-6 h-6 text-red-600" />
+                    </div>
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                      <Icon name="i-heroicons-heart" class="w-6 h-6 text-green-600" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Floating Action Indicators -->
+              <div class="absolute -top-4 -right-4 w-8 h-8 bg-purple-500 rounded-full animate-ping"></div>
+              <div class="absolute -bottom-4 -left-4 w-6 h-6 bg-teal-500 rounded-full animate-bounce delay-500"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-12">
+          <NuxtLink to="/match">
+            <UButton size="xl" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-teal-600 hover:from-purple-700 hover:to-teal-700">
+              <Icon name="i-heroicons-arrow-right" class="mr-2" />
+              Start Matching Now
+            </UButton>
+          </NuxtLink>
         </div>
       </div>
     </section>

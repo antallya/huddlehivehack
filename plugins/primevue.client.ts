@@ -27,6 +27,11 @@ import Panel from 'primevue/panel'
 import Divider from 'primevue/divider'
 import TabView from 'primevue/tabview'
 import TabPanel from 'primevue/tabpanel'
+import SelectButton from 'primevue/selectbutton'
+import InputNumber from 'primevue/inputnumber'
+import MultiSelect from 'primevue/multiselect'
+import Password from 'primevue/password'
+import Checkbox from 'primevue/checkbox'
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(PrimeVue, {
@@ -67,4 +72,9 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('PDivider', Divider)
   nuxtApp.vueApp.component('PTabView', TabView)
   nuxtApp.vueApp.component('PTabPanel', TabPanel)
+  nuxtApp.vueApp.component('PSelectButton', SelectButton)
+  nuxtApp.vueApp.component('PInputNumber', InputNumber)
+  nuxtApp.vueApp.component('PMultiSelect', MultiSelect)
+  nuxtApp.vueApp.component('PPassword', Password)
+  nuxtApp.vueApp.component('PCheckbox', Checkbox)
 })
