@@ -154,7 +154,7 @@ This gamification makes social connection feel playful rather than pressured.
 
 ## 🚀 Live Demo & Deployment
 
-**Live Website**: [https://antallya.github.io/huddlehivehack/](https://antallya.github.io/huddlehivehack/) 🌐
+**Live Website**: [(https://huddlehivehack-7fvf.vercel.app/#moods)]((https://huddlehivehack-7fvf.vercel.app/#moods)) 🌐
 
 **Status**: Deploying... ⚡
 
