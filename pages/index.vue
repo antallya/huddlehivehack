@@ -14,6 +14,7 @@
             <a href="#how-it-works" class="text-gray-700 hover:text-purple-600 transition-colors">How It Works</a>
             <a href="#moods" class="text-gray-700 hover:text-purple-600 transition-colors">Mood Categories</a>
             <NuxtLink to="/demo" class="text-gray-700 hover:text-purple-600 transition-colors">Try Demo</NuxtLink>
+            <NuxtLink to="/primevue" class="text-gray-700 hover:text-purple-600 transition-colors">PrimeVue</NuxtLink>
             <a href="#safety" class="text-gray-700 hover:text-purple-600 transition-colors">Safety</a>
             <NuxtLink to="/about" class="text-gray-700 hover:text-purple-600 transition-colors">About</NuxtLink>
           </div>
