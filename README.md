@@ -152,6 +152,23 @@ This gamification makes social connection feel playful rather than pressured.
 - Machine learning for better mood compatibility
 - Community rating and verification system
 
+## 🚀 Live Demo & Deployment
+
+**Live Website**: [https://YOUR_USERNAME.github.io/huddlehivehack/](https://YOUR_USERNAME.github.io/huddlehivehack/)
+*(Replace YOUR_USERNAME with your GitHub username)*
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions. Every push to the main branch automatically builds and deploys the site.
+
+### New Features Added
+- **Modern Logo**: Clean, circular design inspired by community-space-connect but with vennU branding
+- **Enhanced Homepage**: Better hero section, features showcase, and stats
+- **Authentication Pages**: Login/signup flow with social media options
+- **Tinder-Style Matching**: Swipe interface for communities and venues
+- **PrimeVue Integration**: Rich, accessible UI components
+- **GitHub Pages Ready**: Automated deployment pipeline
+
+For deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
 ## 🏆 Hackathon Context
 
 Built for **HuddleHive Hack 2025**, this project represents our vision for how technology can facilitate authentic human connection. While this is a functional prototype showcasing the concept and user experience, the full implementation would require:
