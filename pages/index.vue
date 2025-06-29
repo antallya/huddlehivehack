@@ -159,7 +159,7 @@
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProblemCard 
-            icon="i-heroicons-calendar-x-mark"
+            icon="i-heroicons-calendar-days"
             title="Planning Anxiety"
             description="People crave spontaneous connection but hate committing to scheduled events"
           />
@@ -179,7 +179,7 @@
             description="Busy people and poor planners miss out on social opportunities"
           />
           <ProblemCard 
-            icon="i-heroicons-heart-crack"
+            icon="i-heroicons-heart"
             title="Dating App Fatigue"
             description="Existing apps are either dating-focused or too formal for casual connection"
           />

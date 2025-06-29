@@ -14,7 +14,16 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  // Configure for GitHub Pages deployment
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+      failOnError: false
+    }
+  },
+
   app: {
+    baseURL: '/huddlehivehack/',
     head: {
       title: 'vennU - Third Space Social Mood Marketplace',
       meta: [
@@ -23,5 +32,8 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Connect with people based on your current social vibe for spontaneous micro-meetups in public spaces.' }
       ]
     }
-  }
+  },
+
+  // Enable static site generation
+  ssr: true
 })

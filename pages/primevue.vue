@@ -119,14 +119,14 @@
             </div>
             <div class="text-center">
               <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Icon name="i-logos-primevue" class="w-8 h-8" />
+                <Icon name="i-heroicons-sparkles" class="w-8 h-8 text-blue-600" />
               </div>
               <h3 class="font-semibold text-gray-800 mb-2">PrimeVue</h3>
               <p class="text-gray-600 text-sm">Rich UI component library</p>
             </div>
             <div class="text-center">
               <div class="w-16 h-16 bg-cyan-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Icon name="i-logos-tailwindcss-icon" class="w-8 h-8" />
+                <Icon name="i-heroicons-swatch" class="w-8 h-8 text-cyan-600" />
               </div>
               <h3 class="font-semibold text-gray-800 mb-2">Tailwind CSS</h3>
               <p class="text-gray-600 text-sm">Utility-first CSS framework</p>
