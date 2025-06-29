@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/huddlehivehack/' : '/',
+    baseURL: process.env.GITHUB_ACTIONS ? '/huddlehivehack/' : '/',
     head: {
       title: 'vennU - Third Space Social Mood Marketplace',
       meta: [
